@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+  <display-name>Student Management System</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+
+  <servlet>
+    <servlet-name>LoginPageServlet</servlet-name>
+    <servlet-class>controller.LoginPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginPageServlet</servlet-name>
+    <url-pattern>/loginPage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RegisterPageServlet</servlet-name>
+    <servlet-class>controller.RegisterPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterPageServlet</servlet-name>
+    <url-pattern>/registerPage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DashboardServlet</servlet-name>
+    <servlet-class>controller.DashboardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DashboardServlet</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddStudentPageServlet</servlet-name>
+    <servlet-class>controller.AddStudentPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddStudentPageServlet</servlet-name>
+    <url-pattern>/addStudentPage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateStudentPageServlet</servlet-name>
+    <servlet-class>controller.UpdateStudentPageController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudentPageServlet</servlet-name>
+    <url-pattern>/updateStudentPage</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>controller.RegisterController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>controller.LoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>controller.LogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>StudentListServlet</servlet-name>
+    <servlet-class>controller.StudentListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentListServlet</servlet-name>
+    <url-pattern>/students</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddStudentServlet</servlet-name>
+    <servlet-class>controller.AddStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddStudentServlet</servlet-name>
+    <url-pattern>/addStudent</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateStudentServlet</servlet-name>
+    <servlet-class>controller.UpdateStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateStudentServlet</servlet-name>
+    <url-pattern>/updateStudent</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteStudentServlet</servlet-name>
+    <servlet-class>controller.DeleteStudentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteStudentServlet</servlet-name>
+    <url-pattern>/deleteStudent</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <session-timeout>1</session-timeout>
+  </session-config>
+</web-app>
